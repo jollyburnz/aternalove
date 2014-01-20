@@ -4,8 +4,10 @@
   //background: #cc2200;
   background: url(background02.png);
   height: 640px;
+  width: 100%;
   padding: 20px;
-  position: relative;
+  position: fixed;
+  top: 0;
   //border-bottom: 1px solid #ccc;
 }
 
@@ -16,9 +18,9 @@
 
 #three{
   //border-top: 1px solid #000;
-  background: #fff;
+  position: relative;
   background: url(geometry.png);
-  //background: url(bright_squares.png);
+  margin-top: 640px;
   padding: 60px 0;
 }
 
