@@ -83,15 +83,15 @@
         left: 0px;
         border-left: 81px solid transparent;
         border-right: 81px solid transparent;
-        border-top: 71px solid #726D6D;
+        border-top: 75px solid #726D6D;
 }       
 .contact .envelope .outer .inner {
         position: absolute;
         left: -81px;
-        top: -70px;
-        border-left: 82px solid transparent;
-        border-right: 82px solid transparent;
-        border-top: 67px solid #fff;
+        top: -74px;
+        border-left: 81px solid transparent;
+        border-right: 81px solid transparent;
+        border-top: 71px solid #fff;
 }
 .contact .envelope .bottom {
         position: absolute;
