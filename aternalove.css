@@ -1,0 +1,117 @@
+/* CSS declarations go here */
+
+#one{
+  //background: #cc2200;
+  background: url(background02.png);
+  height: 640px;
+  padding: 20px;
+  position: relative;
+  //border-bottom: 1px solid #ccc;
+}
+
+#two{
+  background: #cc2200;
+  color: #fff;
+}
+
+#three{
+  //border-top: 1px solid #000;
+  background: #fff;
+  background: url(geometry.png);
+  //background: url(bright_squares.png);
+  padding: 60px 0;
+}
+
+#mantra{
+  padding: 100px 0 200px;
+}
+
+#logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  margin-left: -75px;
+}
+
+#logo1{
+  width: 750px;
+  margin: 30px auto 0;
+  display: block;
+}
+
+#powered_by{
+  width: 200px;
+  margin: 60px auto 0;
+  display: block;
+}
+
+.call2action{
+  margin: 0 auto;
+  display: block;
+}
+
+.notes{
+  display: none;
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  background: #cc2000;
+  z-index: 9999999;
+}
+
+.heartnote{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.box{
+  float: left;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #C2BEBD;
+  background: #fff;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  margin-top: 400px;
+  margin-left: -100px;
+  color: #fff;
+}
+
+#myModal{
+  background: #fff;
+  margin: 0px 15%;
+  border: 5px solid #C00000;
+}
+
+#sent{
+  display: none;
+/*  margin: 250px auto;*/
+}
+
+#lovedones, #you, #message{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#email, #remail, #name, #rname{
+  width: 44%;
+  margin-right: 20px;
+}

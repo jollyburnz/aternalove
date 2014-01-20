@@ -1,0 +1,150 @@
+<head>
+  <title>aternalove</title>
+</head>
+
+<body>
+  {{> intro}}
+  {{> form}}
+</body>
+
+<template name='intro'>
+  <div id='one'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12'>
+          <!-- <img id='logo' src='aterna-logo.png'> -->
+          <img id='logo1' src='aterna-logo05.png'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-offset-4 col-md-4'>
+         <!--  <a class="call2action btne btn-2 btn-2a" href='#'>Share your love!</a> -->
+         <button class="call2action btne btn-2 btn-2a" data-toggle="modal" data-target="#myModal">Share your love!</button>
+          <img id='powered_by' src='powered_by.png'>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='three'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-offset-2 col-md-8'>
+          <h2>How are messages eternal?</h2>
+          <p>Aterna uses the power of Florincoin's global network (bitcoin protocol).  Love messages are stored and copied to thousands of computers.  Once sent, this global system ensures your casing message lives forever.  Want to learn more? <a href="#"><click here</a></p>
+
+          {{lovenotes.URL}}
+          <br/>
+          <!-- {{lovenotes.data}} -->
+
+          {{#each lovenotes.data}}
+            {{> contact}}
+          {{/each}}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>
+
+<template name='contact'>
+  <div class="contact">
+    <div class="envelope">
+      <div class="top">
+        <div class="outer"><div class="inner"></div></div>
+      </div>
+      <div class="bottom"></div>
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="cover"></div>
+      <div class="paper">
+        <span class='paper-left'>To {{to}}</span>
+        <span class='paper-right'>Love, {{from}}</span>
+        <span class='info'>Click letter to <br/>view message</span>
+        <div class='notes'>
+          {{[0]}}<br/>
+          {{[1]}}<br/>
+          {{[2]}}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name='form'>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <img src='rosebouquet.png' style='position: absolute'>
+    <div class='container'>
+      <div class='row'>
+        <div id='eternalform' class='col-md-offset-4 col-md-7'>
+          <br/><br/>
+          <h2>Eternal Love Message</h2>
+          <h4>Love is eternal.  Make your messages last forever.</h4>
+          <br/><br/>
+
+          <form class='form-inline' role="form">
+            <div id='lovedones' class="form-group">
+              <label for="rname">Loved One</label><br/>
+              <input type="text" class="form-control" id="rname" placeholder="Enter their name">
+              <input type="email" class="form-control" id="remail" placeholder="Enter their email">
+            </div>
+            <div id='you' class="form-group">
+              <label for="name">You</label><br/>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <div id='message' class="form-group">
+              <label for='message'>Love Message</label><br/>
+              <textarea id='love-message' class="form-control" rows="4" placeholder="Enter your sweet nothings"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+           <button id="submit-love" class="btne btn-2 btn-2a">Send love message</button>
+           <a data-dismiss="modal">Cancel</a>
+          </form>
+          <br/><br/>
+          <p style='text-align: center'>(messages are permanent and open for the world to see)</p>
+
+        </div>
+
+        <div class='row'>
+          <div id='sent' class='col-md-offset-4 col-md-7'>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <h2>Your love message is being spread</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<template name="hello">
+      <section class="color-2">
+        <p>
+          <button class="btne btn-2 btn-2a">Button</button>
+          <button class="btne btn-2 btn-2b">Button</button>
+        </p>
+        <p>
+          <button class="btne btn-2 btn-2c">Button</button>
+          <button class="btne btn-2 btn-2d">Button</button>
+        </p>
+        <p>
+          <button class="btne btn-2 btn-2e">Button</button>
+          <button class="btne btn-2 btn-2f">Button</button>
+        </p>
+        <p>
+          <button class="btne btn-2 btn-2g">Button</button>
+          <button class="btne btn-2 btn-2h">Button</button>
+        </p>
+        <p>
+          <button class="btne btn-2 btn-2i">Yes</button>
+          <button class="btne btn-2 btn-2j">No</button>
+        </p>
+      </section>
+</template>
