@@ -57,11 +57,11 @@ if Meteor.isClient
       # "mouseout .paper": (e, t) ->
       #   console.log $(e.target).find('.notes').hide()
 
-      console.log @[0]
+      console.log @.lovemsg
 
       vex.defaultOptions.className = 'vex-theme-os';
       vex.dialog.alert
-          message: @[2]
+          message: @.lovemsg
           className: 'vex-theme-wireframe' # Overwrites defaultOptions
 
   Template.form.events 
@@ -110,7 +110,7 @@ if Meteor.isServer
     Meteor.methods
       getMessages: ->
         @unblock()
-        yo = HTTP.call "GET", "http://florincoin.info/api/messages.php?requests=0&requests2=30&prefix=text"
+        yo = HTTP.call "GET", "http://florincoin.info/api/messages.php?requests=0&requests2=30&prefix=t1:ALOVE>"
         console.log yo, 'yooo'
         yo
 
