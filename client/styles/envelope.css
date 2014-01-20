@@ -25,6 +25,7 @@
         top: 50%;
         margin-top: -50px;
         background: #F9F9F9;
+        border: 1px solid #ccc;
         
         transition: margin-top 300ms;
         -ms-transition: margin-top 300ms;
@@ -87,10 +88,10 @@
 .contact .envelope .outer .inner {
         position: absolute;
         left: -81px;
-        top: -73px;
+        top: -70px;
         border-left: 81px solid transparent;
         border-right: 80px solid transparent;
-        border-top: 68px solid #333;
+        border-top: 68px solid #fff;
 }
 .contact .envelope .bottom {
         position: absolute;
@@ -99,14 +100,14 @@
         left: 2px;
         border-left: 81px solid transparent;
         border-right: 80px solid transparent;
-        border-bottom: 45px solid #333;
+        border-bottom: 45px solid #fff;
 }
 .contact .envelope .left {
         position: absolute;
         z-index: 20; top: 0px;
         left: 0px;
-        border-left: 81px solid #333;
-        border-top: 45px solid transparent;
+        border-left: 81px solid #fff;
+        border-top: 46px solid transparent;
         border-bottom: 45px solid transparent;
 }
 .contact .envelope .right {
@@ -114,7 +115,7 @@
         z-index: 20;
         top: 0px;
         right: 0px;
-        border-right: 80px solid #333;
+        border-right: 80px solid #fff;
         border-top: 45px solid transparent;
         border-bottom: 45px solid transparent;
 }
